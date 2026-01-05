@@ -24,22 +24,22 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
 
-      body: Container(
-        child: Column(
-          children: [
-            ElevatedButton(onPressed: () {
-                Navigator.pushNamed(context, RekapPage.routeName);},
-              child: Text('Rekap'),
-            ),
-            // const Text('Tekan Tombol'),
-          ],
-        ),
-      ),
+      // body: Container(
+      //   child: Column(
+      //     children: [
+      //       ElevatedButton(onPressed: () {
+      //           Navigator.pushNamed(context, RekapPage.routeName);},
+      //         child: Text('Rekap'),
+      //       ),
+      //       // const Text('Tekan Tombol'),
+      //     ],
+      //   ),
+      // ),
 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.two_mp_sharp), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.calculate), label: 'Calculate'),
           BottomNavigationBarItem(icon: Icon(Icons.list),label: 'List'),
           BottomNavigationBarItem(icon: Icon(Icons.settings),label: 'Setting'),
