@@ -1,10 +1,28 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:money_calculate/pages/home_page.dart';
 
-class SplashScreen extends StatelessWidget{
+class SplashScreen extends StatefulWidget{
   static const routeName = '/';
 
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreen();
+  }
+
+class _SplashScreen extends State<SplashScreen>{
+
+  @override
+  void initState() {
+    super.initState();
+
+    Future.delayed(Duration(seconds: 5), () {
+      Navigator.pushReplacementNamed(
+          context, HomePage.routeName);
+      },
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
